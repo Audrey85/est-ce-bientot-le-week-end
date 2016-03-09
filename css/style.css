@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@font-face {
+  font-family: "fontPerso";
+  src: url(../font/Roboto-Medium.ttf);
+}
+html{
+  padding : 0;
+  margin : 0;
+  }
+body{
+  font-family :"fontPerso";
+  font-size: 100%;
+}
+
+ /* text animation */
+a{
+  text-decoration: none;
+  color:#666;
+}
+a:hover{
+  color:#999;
+}
+p{
+  font-family :"fontPerso";
+  line-height: 2em;
+  margin:0 0 3%;
+  text-align: center;
+}
+.wrap{
+  position : relative;
+  display : block;
+  margin-top : 10%;
+  max-width: 600px;
+  margin:30%auto;
+}
+.type-wrap{
+  margin:2% auto;
+  padding:5%;
+  border-radius:1%;
+}
+#typed-strings{
+  width :10%;
+}
+.typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+
+ /* coeur animation */
+#c {
+  margin-top : 12%;
+   margin-left : 34%;
+    -webkit-animation: pulse 0.9s infinite;
+}
+
+#c:before{
+  background: #f00;
+  border-top-left-radius: 50px 100px;
+  border-top-right-radius: 50px 100px;
+  content: "";
+  display: block;
+  height: 140px;
+  position: absolute;
+  width: 100px;
+  -webkit-transform: rotate(-50deg);
+}
+
+#c:after{
+  background: #f00;
+  border-top-left-radius: 50px 100px;
+  border-top-right-radius: 50px 100px;
+  content: "";
+  display: block;
+  height: 140px;
+  margin-left: 42px;
+  width: 100px;
+  -webkit-transform: rotate(50deg);
+ }
+ 
+@-webkit-keyframes pulse{
+  0%{
+    -webkit-transform: scale(0.78);
+  }
+  50%{
+    -webkit-transform: scale(1.1);
+  }
+  100%{ 
+    -webkit-transform: scale(0.78);
+  }
+}
+
+@media(max-width: 860px){
+#c{
+  margin-top : 53%;
+}
+#canv{
+  margin-top : 53%;
+}
+}
